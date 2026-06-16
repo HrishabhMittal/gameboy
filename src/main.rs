@@ -1,4 +1,4 @@
 mod gb;
 fn main() {
-    println!("Hello, world!");
+    gb::emulate("test/test.gb").unwrap();
 }
