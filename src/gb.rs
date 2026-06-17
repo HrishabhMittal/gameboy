@@ -100,6 +100,9 @@ impl Emulator {
             stack: Register::init(0xFFFE),
         }
     }
+    fn read_memory(&mut self, address: u16) -> u8 {
+        todo!()
+    }
     fn write_memory(&mut self, address: u16, byte: u8) {
         match address {
             0x0000..=0x7FFF => {}
@@ -115,6 +118,7 @@ impl Emulator {
                 self.mem[address as usize] = byte;
             }
         }
+        todo!()
     }
     fn next_op() -> i32 {
         todo!()
